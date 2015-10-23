@@ -75,7 +75,9 @@ Grumpy Cat       4           Persian        181600
 Lil' Bub         2           Tortoiseshell  2000000   
 ```
 
-## Code Along I: `AVG()`
+## Using Aggregators
+
+### Code Along I: `AVG()`
 
 The average, `AVG()`, function returns the average value of a column. Here's how it works: 
 
@@ -111,7 +113,7 @@ average_net_worth
 800850.0 
 ```
 
-## Code Along II: `SUM()`
+### Code Along II: `SUM()`
 
 The sum, `SUM()`, function returns the sum of all of the values in a particular column. 
 
@@ -135,7 +137,7 @@ SUM(net_worth)
 3203400   
 ```
 
-## Code Along II: `MIN()` and `MAX()`
+### Code Along II: `MIN()` and `MAX()`
 
 The minimum and maximum aggregator functions return the minimum and maximum values from a specified column respectively. 
 
@@ -160,7 +162,7 @@ MIN(net_worth)
 21800   
 ```
 
-## Code Along III: `COUNT()`
+### Code Along III: `COUNT()`
 
 The count function returns the number of rows that meet a certain condition. 
 
@@ -202,7 +204,13 @@ COUNT(*)
 
 Because only Lil' Bub is *that* rich. 
 
-## Code Along V: `ORDER BY()`, `GROUP BY()`,   
+
+
+
+
+
+
+
 
 
 
