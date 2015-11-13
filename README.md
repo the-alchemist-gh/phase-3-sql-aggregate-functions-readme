@@ -1,12 +1,17 @@
 # SQL Aggregate Functions
 
-1. What are aggregate functions and when do we use them?
-2. Learn the basic aggregate functions to select the sum, average, minimum and maximum values from tables columns. 
-3. Practice writing SQL queries that utilize aggregate functions. 
+## Overview
+
+We'll cover basic aggregate functions and how to write SQL queries that utilize them.
+
+## Objectives
+
+1. Define aggregate functions and when to use them
+2. Use the following aggregrate functions in SQL queries: average, sum, count, minimum, maximum
 
 ## Operating on Data
 
-Imagine writing an application for a restaurant owner to track their customers and transactions, or an app that an e-commerce company uses to store users, transactions and shopping behaviors. Think about creating a social networking application whose administrators want to keep track of the number of times a user logs on and identify who their most frequent users are. It's easy to see that storing or persisting information in an application or program is about more than just keeping track of static data. We can imagine any number of situations in which we want to operate on or analyze the data we store. Our restaurant owner will want to discover who their biggest spenders are or what they make on average over a busy weekend. Our e-commerce company wants to know who their most frequent buyers are and how much they spend on average on a given item, and so on. 
+Imagine writing an application for a restaurant owner to track her customers and transactions, or an app that an e-commerce company uses to store users, transactions and shopping behaviors. Think about creating a social networking application whose administrators want to keep track of the number of times a user logs on and identify who their most frequent users are. It's easy to see that storing or persisting information in an application or program is about more than just keeping track of static data. We can imagine any number of situations in which we want to operate on or analyze the data we store. Our restaurant owner will want to discover who her biggest spenders are or what they make on average over a busy weekend. Our e-commerce company wants to know who their most frequent buyers are and how much they spend on average on a given item, and so on. 
 
 We can do so using the aggregate functions that SQL makes available to us. With these functions we can sum and average column data, request minimum and maximum values, and more. SQL also makes available to use keywords that allow us to group aggregated data by various categories and narrow our search criteria based on various conditions. 
 
@@ -20,20 +25,20 @@ Aggregate functions perform a calculation on specified values, queried from a da
 * Minimum
 * Maximum
 
-We'll craft queries that select a desired set of values from a table and them aggregate that data using the above aggregators, in addition to clauses that will group and or order the returned data based on various conditions. 
+We'll craft queries that select a desired set of values from a table and then aggregate that data using the above aggregators, in addition to clauses that will group and or order the returned data based on various conditions. 
 
 For this walk-through, we'll be utilizing a database of pets and owners. 
 
 ## Setting up the Database
 
-Some cats are very famous, and accordingly very wealthy. Our Pet's Database will have a Cats table in which each cat has a name, age, breed and net worth. 
+Some cats are very famous, and accordingly very wealthy. Our pet's database will have a cats table in which each cat has a name, age, breed and net worth. 
 
 **Creating the Database:**
 
 Create the database in your terminal with the following: 
 
 ```bash
-sqlite3 pets_database.db
+sqlite3 pets_database.db 
 ```
 
 **Creating the table:**
