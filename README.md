@@ -177,21 +177,21 @@ Here's how it works:
 SELECT COUNT(column_name) FROM table_name;
 ```
 
-We can use the `COUNT()` function to calculate the total number of rows in a table:
+We can use the `COUNT()` function to calculate the total number of rows in a table that are not `NULL`. `NULL` means empty. All of our cats have a `name` so we can call `COUNT` on the name column like this:
 
 ```sql
-SELECT COUNT(*) FROM cats;
+SELECT COUNT(name) FROM cats;
 ```
 
 This should return:
 
 ```
-COUNT(*)            
+COUNT(name)            
 --------------------
 4
 ```
 
-We have a total of four cats in our Cats table. 
+We have a total of four cats in our Cats table with a name. If we really didn't care about a specific column we just wanted the total number of rows in our database we can call `COUNT(*)`. `*` means everything. Sometimes it's called the "wildcard." This `COUNT(*)` will count the rows where at least one column has data in it. 
 
 We can also use `COUNT()` to count the total number of rows in a table that meet a certain criteria. Let's use this aggregator to count the number of cats whose net worth is greater than one million:
 
