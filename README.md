@@ -7,7 +7,7 @@ We'll cover basic aggregate functions and how to write SQL queries that utilize 
 ## Objectives
 
 1. Define aggregate functions and when to use them
-2. Use the following aggregrate functions in SQL queries: average, sum, count, minimum, maximum
+2. Use the following aggregrate functions in SQL queries: `average`, `sum`, `count`, `minimum`, `maximum`
 
 ## Operating on Data
 
@@ -19,11 +19,11 @@ We can do so using the aggregate functions that SQL makes available to us. With 
 
 Aggregate functions perform a calculation on specified values, queried from a database table. We will cover the following aggregators here: 
 
-* Average
-* Sum
-* Count
-* Minimum
-* Maximum
+* `AVG`
+* `SUM`
+* `COUNT`
+* `MIN`
+* `MAX`
 
 We'll craft queries that select a desired set of values from a table and then aggregate that data using the above aggregators, in addition to clauses that will group and or order the returned data based on various conditions. 
 
@@ -31,7 +31,7 @@ For this walk-through, we'll be utilizing a database of pets and owners.
 
 ## Setting up the Database
 
-Some cats are very famous, and accordingly very wealthy. Our pet's database will have a cats table in which each cat has a name, age, breed and net worth. 
+Some cats are very famous, and accordingly very wealthy. Our pets database will have a cats table in which each cat has a name, age, breed and net worth. 
 
 **Creating the Database:**
 
@@ -104,7 +104,7 @@ AVG(net_worth)
 800850.0 
 ```
 
-That return value is a little ugly, however. Let's use the `AS` keyword to alias the return value as `average_net_worth`.
+That return value is a little ugly, however. Let's use the `AS` keyword to rename the column. This is called "aliasing the return value".
 
 ```sql
 SELECT AVG(net_worth) AS average_net_worth FROM cats;
