@@ -125,7 +125,7 @@ The sum, `SUM()`, function returns the sum of all of the values in a particular 
 Here's how it works:
 
 ```sql
-SELECT SUM(colum_name) FROM table_name;
+SELECT SUM(column_name) FROM table_name;
 ```
 
 Let's try it out by calculating the sum of the net worths of all of our cats:
