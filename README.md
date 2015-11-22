@@ -66,7 +66,7 @@ INSERT INTO cats (name, age, breed, net_worth) VALUES ("Lil' Bub", 2, "Tortoises
 **Confirming our Data**
 
 ```sql
-.schema
+SELECT * FROM cats;
 ```
 
 should return:
