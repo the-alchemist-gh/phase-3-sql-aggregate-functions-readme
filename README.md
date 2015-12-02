@@ -221,3 +221,5 @@ Because only Lil' Bub is *that* rich.
 
 
 
+
+<a href='https://learn.co/lessons/sql-aggregate-functions-readme' data-visibility='hidden'>View this lesson on Learn.co</a>
