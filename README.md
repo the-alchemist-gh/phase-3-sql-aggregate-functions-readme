@@ -77,7 +77,7 @@ name             age         breed          net_worth
 Maru             3           Scottish Fold  1000000   
 Hana             1           Tabby          21800     
 Grumpy Cat       4           Persian        181600    
-Lil' Bub         2           Tortoiseshell  2000000   
+Lil' Bub         2           Tortoiseshell  20000000   
 ```
 
 ## Using Aggregators
