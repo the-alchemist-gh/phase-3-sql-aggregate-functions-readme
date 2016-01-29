@@ -222,4 +222,4 @@ Because only Lil' Bub is *that* rich.
 
 
 
-<a href='https://learn.co/lessons/sql-aggregate-functions-readme' data-visibility='hidden'>View this lesson on Learn.co</a>
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/sql-aggregate-functions-readme' title='SQL Aggregate Functions'>SQL Aggregate Functions</a> on Learn.co and start learning to code for free.</p>
