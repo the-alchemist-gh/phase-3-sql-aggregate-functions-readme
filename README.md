@@ -87,7 +87,7 @@ Lil' Bub         2           Tortoiseshell  20000000
 The average, `AVG()`, function returns the average value of a column. Here's how it works: 
 
 ```sql
-SELECT AVG(column_name) FROM table_name
+SELECT AVG(column_name) FROM table_name;
 ```
 
 Let's write a query to grab the average net worth of our very lucrative cats. 
@@ -222,4 +222,6 @@ Because only Lil' Bub is *that* rich.
 
 
 
-<p data-visibility='hidden'>View <a href='https://learn.co/lessons/sql-aggregate-functions-readme' title='SQL Aggregate Functions'>SQL Aggregate Functions</a> on Learn.co and start learning to code for free.</p>
+<a href='https://learn.co/lessons/sql-aggregate-functions-readme' data-visibility='hidden'>View this lesson on Learn.co</a>
+
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/sql-aggregate-functions-readme'>SQL Aggregate Functions</a> on Learn.co and start learning to code for free.</p>
