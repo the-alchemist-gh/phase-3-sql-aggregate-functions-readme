@@ -31,7 +31,7 @@ For this walk-through, we'll be utilizing a database of pets and owners.
 
 ## Setting up the Database
 
-Some cats are very famous, and accordingly very wealthy. Our pets database will have a cats table in which each cat has a name, age, breed and net worth. 
+Some cats are very famous and, accordingly, very wealthy. Our pets database will have a cats table in which each cat has a name, age, breed, and net worth. 
 
 **Creating the Database:**
 
@@ -47,10 +47,10 @@ In the `sqlite3>` prompt in your terminal:
 
 ```sql
 CREATE TABLE cats (
-name TEXT,
-age INTEGER,
-breed TEXT, 
-net_worth INTEGER
+  name TEXT,
+  age INTEGER,
+  breed TEXT, 
+  net_worth INTEGER
 );
 ```
 
@@ -77,7 +77,7 @@ name             age         breed          net_worth
 Maru             3           Scottish Fold  1000000   
 Hana             1           Tabby          21800     
 Grumpy Cat       4           Persian        181600    
-Lil' Bub         2           Tortoiseshell  20000000   
+Lil' Bub         2           Tortoiseshell  20000000  
 ```
 
 ## Using Aggregators
@@ -208,20 +208,5 @@ COUNT(*)
 ```
 
 Because only Lil' Bub is *that* rich. 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<a href='https://learn.co/lessons/sql-aggregate-functions-readme' data-visibility='hidden'>View this lesson on Learn.co</a>
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/sql-aggregate-functions-readme'>SQL Aggregate Functions</a> on Learn.co and start learning to code for free.</p>
