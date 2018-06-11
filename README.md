@@ -58,9 +58,9 @@ CREATE TABLE cats (
 
 ```sql
 INSERT INTO cats (name, age, breed, net_worth) VALUES ("Maru", 3, "Scottish Fold", 1000000);
-INSERT INTO cats (name, age, breed, net_worth) VALUES ("Hana", 1, "Tabby", 21800);
-INSERT INTO cats (name, age, breed, net_worth) VALUES ("Grumpy Cat", 4, "Persian", 181600);
-INSERT INTO cats (name, age, breed, net_worth) VALUES ("Lil' Bub", 2, "Tortoiseshell", 2000000);
+INSERT INTO cats (name, age, breed, net_worth) VALUES ("Hana", 1, "Tabby", 21000);
+INSERT INTO cats (name, age, breed, net_worth) VALUES ("Grumpy Cat", 4, "Persian", 181800);
+INSERT INTO cats (name, age, breed, net_worth) VALUES ("Lil' Bub", 2, "Tortoiseshell", 3000000);
 ```
 
 **Confirming our Data**
@@ -75,9 +75,9 @@ should return:
 name             age         breed          net_worth 
 ---------------  ----------  -------------  ----------
 Maru             3           Scottish Fold  1000000   
-Hana             1           Tabby          21800     
-Grumpy Cat       4           Persian        181600    
-Lil' Bub         2           Tortoiseshell  20000000  
+Hana             1           Tabby          21000    
+Grumpy Cat       4           Persian        181800    
+Lil' Bub         2           Tortoiseshell  3000000  
 ```
 
 ## Using Aggregators
@@ -101,7 +101,7 @@ This should return:
 ```
 AVG(net_worth) 
 ---------------
-800850.0 
+1050700.0
 ```
 
 That return value is a little ugly, however. Let's use the `AS` keyword to rename the column. This is called "aliasing the return value".
@@ -115,7 +115,7 @@ This should return:
 ```
 average_net_worth   
 --------------------
-800850.0 
+1050700.0 
 ```
 
 ### Code Along II: `SUM()`
@@ -139,7 +139,7 @@ This should return:
 ```
 SUM(net_worth)      
 --------------------
-3203400   
+4202800   
 ```
 
 ### Code Along II: `MIN()` and `MAX()`
@@ -164,7 +164,7 @@ This should return:
 ```
 MIN(net_worth)      
 --------------------
-21800   
+21000   
 ```
 
 ### Code Along III: `COUNT()`
