@@ -7,7 +7,7 @@ We'll cover basic aggregate functions and how to write SQL queries that utilize 
 ## Objectives
 
 1. Define aggregate functions and when to use them
-2. Use the following aggregrate functions in SQL queries: `average`, `sum`, `count`, `minimum`, `maximum`
+2. Use the following aggregate functions in SQL queries: `average`, `sum`, `count`, `minimum`, `maximum`
 
 ## Operating on Data
 
