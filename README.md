@@ -25,7 +25,7 @@ Aggregate functions perform a calculation on specified values, queried from a da
 * `MIN`
 * `MAX`
 
-We'll craft queries that select a desired set of values from a table and then aggregate that data using the above aggregators, in addition to clauses that will group and or order the returned data based on various conditions. 
+We'll craft queries that select a desired set of values from a table and then aggregate that data using the above aggregators, in addition to clauses that will group and/or order the returned data based on various conditions. 
 
 For this walk-through, we'll be utilizing a database of pets and owners. 
 
