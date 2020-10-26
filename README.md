@@ -209,4 +209,4 @@ COUNT(*)
 
 Because only Lil' Bub is *that* rich. 
 
-<p data-visibility='hidden'>View <a href='https://learn.co/lessons/sql-aggregate-functions-readme'>SQL Aggregate Functions</a> on Learn.co and start learning to code for free.</p>
+
