@@ -1,14 +1,13 @@
-# SQL Aggregate Functions
+# Aggregate Functions
 
-## Overview
+## Introduction
 
 We'll cover basic aggregate functions and how to write SQL queries that utilize them.
 
-## Objectives
+## Learning Goals
 
-1. Define aggregate functions and when to use them
-2. Use the following aggregate functions in SQL queries: `average`, `sum`,
-   `count`, `minimum`, `maximum`
+- Define aggregate functions and when to use them
+- Use the following aggregate functions in SQL queries: `average`, `sum`, `count`, `minimum`, `maximum`
 
 ## Operating on Data
 
