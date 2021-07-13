@@ -3,7 +3,8 @@
 ## Learning Goals
 
 - Define aggregate functions and when to use them
-- Use the following aggregate functions in SQL queries: `average`, `sum`, `count`, `minimum`, `maximum`
+- Use the following aggregate functions in SQL queries: `average`, `sum`,
+  `count`, `minimum`, `maximum`
 
 ## Introduction
 
@@ -15,14 +16,15 @@ Imagine writing an application for a restaurant owner to track her customers and
 transactions, or an app that an e-commerce company uses to store users,
 transactions and shopping behaviors. Think about creating a social networking
 application whose administrators want to keep track of the number of times users
-log on to identify who their most frequent users are. It's easy to see that
-storing or persisting information in an application or program is about more
-than just keeping track of static data. We can imagine any number of situations
-in which we want to operate on or analyze the data we store. Our restaurant
-owner will want to discover who her biggest spenders are or what they make on
-average over a busy weekend. Our e-commerce company wants to know who their most
-frequent buyers are and how much they spend on average on a given item, and so
-on.
+log on to identify who their most frequent users are.
+
+It's easy to see that storing or persisting information in an application or
+program is about more than just keeping track of static data. We can imagine any
+number of situations in which we want to operate on or analyze the data we
+store. Our restaurant owner will want to discover who her biggest spenders are
+or what they make on average over a busy weekend. Our e-commerce company wants
+to know who their most frequent buyers are and how much they spend on average on
+a given item, and so on.
 
 We can do so using the aggregate functions that SQL makes available to us. With
 these functions we can sum and average column data, request minimum and maximum
@@ -30,78 +32,39 @@ values, and more. SQL also includes keywords that allow us to group aggregated
 data by various categories and narrow our search criteria based on various
 conditions.
 
-## Aggregate Functions
+## Using Aggregate Functions
 
 Aggregate functions perform a calculation on specified values, queried from a
 database table. We will cover the following aggregators here:
 
-* `AVG`
-* `SUM`
-* `COUNT`
-* `MIN`
-* `MAX`
+- `AVG`
+- `SUM`
+- `COUNT`
+- `MIN`
+- `MAX`
 
 We'll craft queries that select a desired set of values from a table and then
 aggregate that data using the above aggregators, in addition to clauses that
 will group and/or order the returned data based on various conditions.
 
-For this walk-through, we'll be utilizing a database of pets and owners.
+For this walk-through, we'll be utilizing a database of pets once more.
 
-## Setting up the Database
+For the rest of this code along, you can run the SQL commands one of two ways,
+depending on your preference.
 
-Some cats are very famous and, accordingly, very wealthy. Our pets database will
-have a cats table in which each cat has a name, age, breed, and net worth.
+You can either open the database using the `sqlite3` CLI, and run the SQL
+commands from the terminal:
 
-**Creating the Database:**
-
-Create the database in your terminal with the following:
-
-```bash
+```sh
 sqlite3 pets_database.db
 ```
 
-**Creating the table:**
-
-In the `sqlite>` prompt in your terminal:
-
-```sql
-CREATE TABLE cats (
-  name TEXT,
-  age INTEGER,
-  breed TEXT,
-  net_worth INTEGER
-);
-```
-
-**Inserting the values:**
-
-```sql
-INSERT INTO cats (name, age, breed, net_worth) VALUES ("Maru", 3, "Scottish Fold", 1000000);
-INSERT INTO cats (name, age, breed, net_worth) VALUES ("Hana", 1, "Tabby", 21000);
-INSERT INTO cats (name, age, breed, net_worth) VALUES ("Grumpy Cat", 4, "Persian", 181800);
-INSERT INTO cats (name, age, breed, net_worth) VALUES ("Lil' Bub", 2, "Tortoiseshell", 3000000);
-```
-
-**Confirming our Data:**
-
-```sql
-SELECT * FROM cats;
-```
-
-should return:
-
-```
-name             age         breed          net_worth
----------------  ----------  -------------  ----------
-Maru             3           Scottish Fold  1000000
-Hana             1           Tabby          21000
-Grumpy Cat       4           Persian        181800
-Lil' Bub         2           Tortoiseshell  3000000  
-```
+Or you can open the `pets_database.db` file in DB Browser for SQLite, and run
+the SQL commands from the "Execute SQL" tab.
 
 ## Using Aggregators
 
-### Code Along I: `AVG()`
+### Code Along 1: `AVG()`
 
 The average, `AVG()`, function returns the average value of a column. Here's how
 it works:
@@ -118,7 +81,7 @@ SELECT AVG(net_worth) FROM cats;
 
 This should return:
 
-```
+```txt
 AVG(net_worth)
 ---------------
 1050700.0
@@ -133,13 +96,13 @@ SELECT AVG(net_worth) AS average_net_worth FROM cats;
 
 This should return:
 
-```
+```txt
 average_net_worth
 --------------------
 1050700.0
 ```
 
-### Code Along II: `SUM()`
+### Code Along 2: `SUM()`
 
 The sum, `SUM()`, function returns the sum of all of the values in a particular
 column.
@@ -158,13 +121,13 @@ SELECT SUM(net_worth) FROM cats;
 
 This should return:
 
-```
+```txt
 SUM(net_worth)
 --------------------
 4202800
 ```
 
-### Code Along III: `MIN()` and `MAX()`
+### Code Along 3: `MIN()` and `MAX()`
 
 The minimum and maximum aggregator functions return the minimum and maximum
 values from a specified column respectively.
@@ -184,13 +147,13 @@ SELECT MIN(net_worth) FROM cats;
 
 This should return:
 
-```
+```txt
 MIN(net_worth)
 --------------------
 21000
 ```
 
-### Code Along IV: `COUNT()`
+### Code Along 4: `COUNT()`
 
 The count function returns the number of rows that meet a certain condition.
 
@@ -210,7 +173,7 @@ SELECT COUNT(name) FROM cats;
 
 This should return:
 
-```
+```txt
 COUNT(name)
 --------------------
 4
@@ -232,10 +195,10 @@ SELECT COUNT(*) FROM cats WHERE net_worth > 1000000;
 
 This should return:
 
-```
+```txt
 COUNT(*)
 --------------------
 1
 ```
 
-Because only Lil' Bub is *that* rich.
+Because only Lil' Bub is _that_ rich.
