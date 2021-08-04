@@ -90,7 +90,7 @@ SELECT * FROM cats;
 
 should return:
 
-```
+```bash
 name             age         breed          net_worth
 ---------------  ----------  -------------  ----------
 Maru             3           Scottish Fold  1000000
@@ -118,7 +118,7 @@ SELECT AVG(net_worth) FROM cats;
 
 This should return:
 
-```
+```bash
 AVG(net_worth)
 ---------------
 1050700.0
@@ -133,7 +133,7 @@ SELECT AVG(net_worth) AS average_net_worth FROM cats;
 
 This should return:
 
-```
+```bash
 average_net_worth
 --------------------
 1050700.0
@@ -158,7 +158,7 @@ SELECT SUM(net_worth) FROM cats;
 
 This should return:
 
-```
+```bash
 SUM(net_worth)
 --------------------
 4202800
@@ -184,7 +184,7 @@ SELECT MIN(net_worth) FROM cats;
 
 This should return:
 
-```
+```bash
 MIN(net_worth)
 --------------------
 21000
@@ -210,7 +210,7 @@ SELECT COUNT(name) FROM cats;
 
 This should return:
 
-```
+```bash
 COUNT(name)
 --------------------
 4
@@ -232,7 +232,7 @@ SELECT COUNT(*) FROM cats WHERE net_worth > 1000000;
 
 This should return:
 
-```
+```bash
 COUNT(*)
 --------------------
 1
