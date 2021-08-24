@@ -57,8 +57,8 @@ depending on your preference.
 You can either open the database using the `sqlite3` CLI, and run the SQL
 commands from the terminal:
 
-```sh
-sqlite3 pets_database.db
+```console
+$ sqlite3 pets_database.db
 ```
 
 Or you can open the `pets_database.db` file in DB Browser for SQLite, and run
